@@ -1,6 +1,7 @@
 import styles from '@/styles/pages/Index.module.scss'
 import { useState } from 'react'
 import { CheckPageResponse } from './api/checkPage'
+import { html } from 'js-beautify'
 
 export default function Index() {
   const [url, setUrl] = useState(
@@ -25,7 +26,9 @@ export default function Index() {
         <button>Get Page</button>
       </form>
 
-      <p>{text}</p>
+      <pre>
+        <code>{html(text)}</code>
+      </pre>
     </div>
   )
 
