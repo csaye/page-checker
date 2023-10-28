@@ -4,9 +4,7 @@ import { CheckPageResponse } from './api/checkPage'
 import { html } from 'js-beautify'
 
 export default function Index() {
-  const [url, setUrl] = useState(
-    'https://www.law.nyu.edu/housing/summerliving/apply'
-  )
+  const [url, setUrl] = useState('')
   const [text, setText] = useState('')
 
   return (
