@@ -26,9 +26,11 @@ export default function Index() {
         <button>Get Page</button>
       </form>
 
-      <pre>
-        <code>{html(text)}</code>
-      </pre>
+      {text && (
+        <pre>
+          <code>{html(text)}</code>
+        </pre>
+      )}
     </div>
   )
 
